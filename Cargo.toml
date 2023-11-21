@@ -17,7 +17,8 @@ panic-probe = { version = "0.3", features = ["print-defmt"] }
 # rp-pico = "0.8"
 
 # but you can use any BSP.
-seeeduino-xiao-rp2040 = "0.4.0"
+seeeduino-xiao-rp2040 = "0.5.0"
+gc9a01-rs = "0.1.0"
 
 # If you're not going to use a Board Support Package you'll need these:
 # rp2040-hal = { version="0.9", features=["rt", "critical-section-impl"] }
