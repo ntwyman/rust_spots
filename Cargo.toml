@@ -1,24 +1,27 @@
 [package]
 edition = "2021"
+license = "MIT OR Apache-2.0"
 name = "rust_spots"
 version = "0.1.0"
-license = "MIT OR Apache-2.0"
 
 [dependencies]
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
-embedded-hal = { version = "0.2.5", features = ["unproven"] }
+embedded-hal = {version = "0.2.5", features = ["unproven"]}
 
 defmt = "0.3"
 defmt-rtt = "0.4"
-panic-probe = { version = "0.3", features = ["print-defmt"] }
+panic-probe = {version = "0.3", features = ["print-defmt"]}
 
 # We're using a Pico by default on this template
 # rp-pico = "0.8"
 
 # but you can use any BSP.
-seeeduino-xiao-rp2040 = "0.5.0"
+display-interface = "0.4.1"
+embedded-graphics = "0.8.1"
+fugit = "0.3.7"
 gc9a01-rs = "0.1.0"
+seeeduino-xiao-rp2040 = "0.5.0"
 
 # If you're not going to use a Board Support Package you'll need these:
 # rp2040-hal = { version="0.9", features=["rt", "critical-section-impl"] }
