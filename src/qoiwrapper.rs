@@ -1,3 +1,10 @@
+/* The tinyQOI implementation produces RGB888 images and the gc9a01
+driver only supports RGB565 for now, so this is a wrapper which converts
+the pixels on the fly.
+
+Not super efficient but it gets things going.
+*/
+
 use embedded_graphics::{
     draw_target::{DrawTarget, DrawTargetExt},
     geometry::{Dimensions, OriginDimensions, Size},
